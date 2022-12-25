@@ -5,6 +5,7 @@ const bodyColorSwitcher = document.querySelector('body')
 btnStart.addEventListener('click', onClickBtnStart);
 btnStop.addEventListener('click', onClickBtnStop);
 
+let timerId = null;
 function onClickBtnStart(evt) { 
     evt.currentTarget.setAttribute("disabled", "true")
     timerId = setInterval(() => {
